@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+}
+.wrapper{
+    width:1440px;
+    margin:0 auto;
+}
+.header{
+    height: 265px;
+    background-color: #512689;
+    color: white;
+    position: relative;
+    
+}
+h1{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 16px;
+}
+p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+    color:#F8F8F8;
+    text-align: center;
+    }
+.text__info{
+    position: absolute;
+    margin:64px 297px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.cards__employees{
+    display:flex;
+    justify-content: space-between;
+    margin: 28px 80px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 305px;
+    height: 263px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3.98px 0px #33333326;
+    align-items: center; /* Добавляем это для центрирования содержимого */
+    position: relative;
+    
+}
+
+.employee_photo {
+    height: auto; /* Убираем фиксированную высоту */
+    width: 100%; /* Устанавливаем ширину 100% от родительского контейнера */
+    max-width: 124px; /* Ограничиваем максимальную ширину, если необходимо */
+    border-radius: 10px; /* Добавляем закругления для изображения, если нужно */
+    margin-top: 36px;
+}
+
+.name{
+    margin-top: 16px;
+    color:black;
+    
+}
+
+.btn{
+    
+    background-color: transparent;
+    border:1px solid white;
+    border-radius: 8px;
+    color:white;
+    padding:8px 16px;
+    
+}
+.btn-exit{
+    margin-top: 31px;
+    margin-right: 80px;
+    position: absolute;
+    right: 0;
+}
+.liked__item{
+    
+    background-color: #F8F8F8;
+    border:none;
+    border-radius: 4px;
+    width: 30px;
+    height: 28px;
+    margin-top: 16px;
+    position: absolute;
+    bottom:0;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.heart{
+    width:14px;
+    height:12px;
+    
+}
+.btn:hover .heart{
+    fill:  #512689;
+    
+}
+.btn-more{
+    background-color: transparent;
+    border:1px solid black;
+    border-radius: 8px;
+    padding: 9px 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 56px;
+    
+}
+.arrow{
+    margin-left: 8px;
+    width: 24px;
+    height: 24px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.page1{
+    display: none;
+}
+
+.btn-back{
+    position: absolute;
+    margin-top: 32px;
+    margin-left: 80px;
+    position: absolute;
+    left: 0;   
+}
+.info{
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.second_page_photo{
+    width: 187px;
+    height: 187px;
+    position:absolute;
+    top:39px;
+    left:188px;
+    
+}
+.text__info-second{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin:68px 407px;
+    position: absolute;
+
+}
+.second_page_status{
+    font-size: 32px;
+    margin-top: 16px;
+    
+}
+.description_of_employee{
+  
+    max-width: 630px;
+    margin-top: 49px;
+    margin-left: 188px;
+    max-height: 396px;
+    color:black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+
+}
+.information{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:105px;
+
+}
+.icons{
+    margin-top: 48px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:24px;
+   
+    
+}
+.telephone::before{
+    content: url(./photos/Frame.png);
+    margin-right: 8px;
+}
+.mail::before{
+    content:url(./photos/mail.png);
+    margin-right: 8px;
+}
+.icon-item{
+    display: flex;
+    align-items: center;
+}
+
+
