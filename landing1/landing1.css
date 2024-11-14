@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+
+ul{
+    list-style: none;
+}
+.divider{
+    border:none;
+    border-bottom: 1px solid  #E1E4EDCC;
+    
+}
+body{
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+    color: #5B5766;
+    font-size: 18px;
+    line-height: 1.5;
+}
+h1,h2,h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #554D89;
+}
+.btn{
+    border: none;
+    text-decoration: none;
+    border-radius: 40px;
+    height:40px;
+    padding:0 15px;
+    font-family: "Poppins", sans-serif;
+    cursor:pointer;
+}
+.btn-light{
+    background-color: transparent;
+    border: 1px solid #6852ED;
+    color:  #6852ED;
+    font-size: 14px;
+}
+.btn-dark{
+    background: linear-gradient(26.57deg, #6852ED 16.67%, #BA43FC 100%);
+    color:white;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding:13px 30px;
+
+}
+.header__without_line{
+    display: flex;
+    justify-content: space-between;
+    padding:24px 0 17px;
+    font-size:16px;
+    color:#716C80;
+    
+}
+
+.header__top{
+    
+    line-height: 27px;
+}
+.header__tel{
+    text-decoration: none;
+    color:#716C80;
+    line-height: 21px;
+
+}
+.header__tel:hover{
+    text-decoration: underline;
+}
+.header__tel::before{
+    content:url(envelope.png);
+    margin-right: 8px;
+}
+
+.wrapper{
+    width: 1140px;
+    margin:0 auto;
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: center;
+}
+.header__navbar{
+    display:flex;
+    align-items: center;
+}
+.header_logo{
+    display: block;
+    margin-right: 58px;
+}
+.header_menu{
+    display:flex;
+}
+.header-menu-item{
+    margin-right: 30px;
+    position: relative;
+    padding:18px 0;
+
+}
+.header-menu-item:hover .header__submenu{
+    display:block;
+}
+.header-menu-item:last-child(){
+    margin-right: 0;
+}
+.header__submenu{
+    display: none;
+    position: absolute;
+    top:54px;
+    left:-30px;
+    padding:30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px #E1E4ED;
+    background-color: white;
+
+}
+.header__submenu > .header-menu-item{
+    padding:0;
+    margin-bottom: 10px;
+}
+.header__submenu > .header-menu-item:last-child(){
+    margin-bottom: 0;
+}
+.header-menu-link {
+    color: #5B5766;
+    font-size: 16px;
+    text-decoration: none;
+}
+.header-menu-link:hover{
+    color:#554D89;
+    text-shadow: 0 0 1px #554D89;
+}
+.header-menu-link_active{
+    color: #554D89;
+    font-weight: 700;
+}
+.header__actions__text{
+    display:inline-block;
+    margin:0 5px;
+}
+.first-page{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 105px;
+    position:relative;
+}
+.info{
+    padding-top: 137px;
+    display:flex;
+    flex-direction: column;
+    
+}
+.header_1{
+    /*width: 360px;*/
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 32px;
+}
+.descroption{
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.link{
+    border:none;
+    background-color: transparent;
+    text-decoration:none;
+    color: #554D89;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    
+}
+.link:hover{
+    text-shadow:0 0 1px  #554D89;
+}
+.link-arrow-right::after{
+    content:url(long-arrow-right.png);
+    margin-left:15px;
+    
+}
+.info-actions .btn-dark{
+    align-items: center;
+    margin-right: 30px;
+}
+.btn-bottom{
+    position: absolute;
+    bottom:20px;
+    left:50%;
+    transform: translateX(-50%);
+    width:110px;
+    height:110px;
+    background-color:  #6852ED;
+    border-radius:50%;
+    text-decoration: none;
+    
+}
+.long-arrow-down{
+    padding: 30px 43px;
+}
+.features{
+    margin-top: 94px;
+    display:flex;
+    justify-content: space-between;
+}
+.features-item{
+    width:360px;
+    box-shadow: 0px 0px 20px 0px #E1E4ED;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding:30px;
+}
+.features-item:hover{
+    box-shadow: 0px 0px 20px 0px #6852EDCC;
+    background: linear-gradient(26.57deg, #6852ED 16.67%, #BA43FC 100%);
+}
+.features-item:last-child(){
+    margin-right: 0;
+}
+.feature-header{
+    color: #554D89;
+
+    margin-top:30px;
+    margin-bottom: 19px;
+
+}
+.feature-text{
+    font-size:18px;
+    line-height: 28px;
+    color: #716C80;
+    
+}
+.infoblock_link{
+    display: none;
+    color:white;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.features-item:hover .feature-icon{
+    display:none;
+}
+.features-item:hover .feature-header{
+    color:white;
+}
+.features-item:hover .feature-text{
+    color:white;
+}
+.features-item:hover .infoblock_link{
+    display:inline-block;
+}
+.third_page{
+    margin-top: 120px;
+    margin-bottom:120px;
+    display:flex;
+    justify-content: space-between;
+    gap:65px;
+}
+.third_page_header{
+    font-size:28px;
+    line-height: 42px;
+    margin-bottom: 31px;
+}
+.third_page_info{
+    margin-top:121px;
+    /* display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left; */
+}
+.third_page_tetx{
+    margin-bottom: 48px;
+    text-align: justify;
+}
+.third_page_link {
+    color: #554D89;
+    display:inline;
+    margin-left: 30px;
+}
+.forth_page{
+    display:flex;
+    justify-content: space-between;
+    
+
+}
+.forth_page h1{
+    
+    font-size:28px;
+    line-height: 42px;
+}
+.forth_page .info{
+    margin-right: 71px;
+}
+.forth_page p{
+    max-width: 510px;
+    font-family: "Nunito";
+    margin-bottom: 47px;
+    font-weight: 200;
+    font-size:18px;
+    color: #716C80;
+    line-height: 28px;
+}
+.fifth_page{
+    margin-top: 81px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fifth_page #features{
+    display:flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+ .fifth_page .features-item {
+    flex:0 0 calc(50%-15px);
+    box-sizing: border-box;
+} 
+.fifth_page .tetx_info{
+    max-width: 330px;
+}
+.fifth_page .feature-text-feature_third{
+    margin-bottom: 47px;
+    font-family: "Nunito";
+    margin-bottom: 47px;
+    font-weight: 200;
+    font-size:18px;
+    color: #716C80;
+    line-height: 28px;
+}
